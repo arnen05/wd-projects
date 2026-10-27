@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.col p {
+    background: #ffbbbb;
+    border: 2px solid #ff0000;
+    padding: 20px;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        width: 100%;
+    }
+}
