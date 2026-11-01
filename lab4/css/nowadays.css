@@ -1,0 +1,49 @@
+.heading {
+    text-align: center;
+    font-size: 22px;
+}
+
+.back-to-main {
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopping-heading,
+h2 {
+    text-align: center;
+}
+
+ul > li > ul > li:nth-child(odd) {
+    background-color: #aaaaaa;
+    color: #ffffff;
+}
+
+ol > li:nth-child(3):hover,
+ol > li:nth-child(5):hover {
+    cursor: pointer;
+}
+
+ol > li:nth-child(4) {
+    background-color: #123456;
+    color: white;
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .lists-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .list-block {
+        flex: 1;
+        padding: 0 20px;
+    }
+}

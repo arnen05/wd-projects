@@ -1,0 +1,125 @@
+.heading {
+    text-align: center;
+    font-size: 22px;
+}
+
+#toc {
+    text-align: center;
+}
+
+.back-to-main {
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.toc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.toc-button {
+    display: block;
+    padding: 5px;
+    width: 180px;
+    background-color: #0000ff;
+    color: #ffffff;
+    line-height: 150%;
+    text-decoration: none;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.toc-button:hover {
+    background-color: #aa00ff;
+}
+
+.toc-button:active {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+.section {
+    font-size: 1.2em;
+    border: 1px solid #000000;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-heading {
+    font-size: 1.7em;
+    margin-top: 0;
+}
+
+#basic_info_section {
+    background-color: #aa0000;
+    color: #ffffff;
+}
+
+#childhood_section {
+    background-color: #00aa00;
+    color: #ffffff;
+}
+
+#school_years_section {
+    background-color: #0000aa;
+    color: #ffffff;
+}
+
+#outside_school_section {
+    background-color: #aa00aa;
+    color: #ffffff;
+}
+
+#university_section {
+    background-color: #aaaa00;
+}
+
+.toc-back-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.back-to-top-button {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bio-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .bio-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #university_section {
+        grid-column: 1 / -1;
+    }
+}
+@media (min-width: 992px) {
+    .bio-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #university_section {
+        grid-column: auto;
+    }
+}
