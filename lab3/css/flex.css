@@ -1,39 +1,118 @@
 * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
 
-.item {
-    width: 25%;
-    padding: 10px;
+.block {
+    border: 3px solid black;
+    background: #d6e8d6;
+    min-height: 200px;
 }
 
-.item p {
-    background: #bbbbff;
-    border: 2px solid #0000ff;
-    padding: 20px;
+.block p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.caption {
+    margin: 0;
+    border: 2px solid black;
+    border-top: 0;
+    border-right: 0;
+    font-size: 24px;
     text-align: center;
 }
 
-.links a {
-    display: block;
-    margin-bottom: 10px;
+.one {
+    background: orange;
 }
 
-@media (max-width: 992px) and (min-width: 769px) {
-    .item {
-        width: 50%;
+.two {
+    background: #db0078;
+    color: white;
+}
+
+.three {
+    background: #f9dcd8;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 16px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    background: #eeeeee;
+}
+
+nav a:hover {
+    background: #dddddd;
+}
+
+.flexbox-layout {
+    display: flex;
+    gap: 3%;
+}
+
+.flexbox-layout .block {
+    width: 33%;
+    padding: 0 0 15px;
+}
+
+.flexbox-layout .caption {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.flexbox-layout p {
+    padding: 20px 20px 0;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .flexbox-layout {
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+    .flexbox-layout .block {
+        width: 48%;
+    }
+    .flexbox-layout .block:nth-child(3) {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .item {
+    .container {
+        width: 78%;
+    }
+    .block {
+        min-height: 0;
+    }
+
+    .flexbox-layout {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .flexbox-layout .block {
         width: 100%;
     }
 }

@@ -3,20 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CSS Grid</title>
+        <title>Grid</title>
         <link rel="stylesheet" href="css/grid.css" />
     </head>
     <body>
-        <h1>Grid</h1>
-        <div class="grid-container">
-            <div class="item"><p>Блок 1</p></div>
-            <div class="item"><p>Блок 2</p></div>
-            <div class="item"><p>Блок 3</p></div>
-            <div class="item"><p>Блок 4</p></div>
-        </div>
-        <div class="links">
-            <a href="index.html">Switch to Float & Positioning</a>
-            <a href="flexbox.html">Switch to CSS Flexbox</a>
-        </div>
+        <h1>Main caption</h1>
+        <main class="container grid-layout">
+            <section class="block">
+                <h2 class="caption one">Caption 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+            </section>
+            <section class="block">
+                <h2 class="caption two">Caption 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+            </section>
+            <section class="block">
+                <h2 class="caption three">Caption 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+            </section>
+        </main>
+        <nav><a href="index.html">Switch to Float & Positioning</a><a href="flex.html">Switch to CSS Flexbox</a></nav>
     </body>
 </html>
