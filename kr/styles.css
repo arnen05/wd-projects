@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2,
+h3 {
+    font-family: "Noto Sans";
+}
+
+h4,
+td,
+tr,
+li,
+caption,
+div a {
+    font-family: "Montserrat";
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+#text-block {
+    background-color: #aa7777;
+}
+
+#list-block {
+    background-color: #77aa77;
+}
+
+#table-block {
+    background-color: #7777aa;
+}
+
+#image-block {
+    background-color: #aaaa77;
+}
+
+#text-block p {
+    color: rgb(48, 0, 0);
+}
+
+#list-block li {
+    color: #003f00;
+}
+
+#table-block tr,
+caption {
+    color: #000052;
+}
+
+a {
+    color: #072931;
+}
+
+.block-task-header {
+    width: 200px;
+    font-size: 1.2em;
+}
+
+#text-block-header {
+    background-color: #cc9999;
+}
+
+#list-block-header {
+    background-color: #99cc99;
+}
+
+#table-block-header {
+    background-color: #9999cc;
+}
+
+#image-block-header {
+    background-color: #cccc99;
+}
